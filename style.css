@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "chakra petch", sans-serif;
+    background-color: #ddd;
+    height: 100vh;
+    
+}
+
+.info {
+  border: 1px solid red;
+  width: 150px;
+}
+.info-one > span  {
+  font-weight: 900;
+}
+
+.info-one {
+  margin-bottom: 20px;
+}
+
+
+.pokeapi-logo {
+  position: absolute;
+  left: 40%;
+  top: 10%;
+}
+
+.poke-chat {
+  display: none;
+  border-radius: 50%;
+  border: 2px #000 solid;
+  width: 100px;
+  height: 75px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  position: absolute;
+  left: 550px;
+  top: 240px;
+  z-index: 2;
+  transition: all ease-out 300ms;
+}
+
+
+.pokeDex {
+    width: 210px;
+    height: 250px;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image:  url(./texture.jpeg) ;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+.wrapper-pokemon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.one {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+  
+}
+
+.oneHover {
+  filter: drop-shadow(2px 2px 4px rgb(11, 105, 7)) brightness(1.2);
+  transition: all ease-out 300ms;
+}
+
+.one:hover,
+.one:focus {
+  transition: all ease-out 300ms;
+  
+  
+  filter: drop-shadow(2px 2px 4px rgb(11, 105, 7)) brightness(1.2);
+  cursor: pointer;
+  
+}
+
+
+.two {
+  grid-column: 1;
+  grid-row: 4;
+  padding-left: 20px;
+}
+.three {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.three,
+.four {
+    text-transform: uppercase;
+}
+
+
+.four {
+  grid-column: 2;
+  grid-row: 2;
+}
+.five {
+  grid-column: 2;
+  grid-row: 3;
+}
+.six {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.seven {
+    grid-column: 1 / -1;
+    grid-row: 5;
+    max-width: 100%;
+}
+
+.pokeDesc {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pokeDesc:hover,
+.pokeDesc:focus {
+    color: red;
+}
+
+
+
+a {
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.next,
+.last{
+  background-color: #FFDE00;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(56, 56, 56, 0.4);
+}
+
+
+.next {
+  position: absolute;
+  top: 49%;
+  left: 587px;
+  transform: translate(-50%, -50%);
+}
+
+.last {
+  position: absolute;
+  top: 49%;
+  right: 550px;
+  transform: translate(-50%, -50%);
+}
+
+.next:focus,
+.next:hover,
+.last:focus,
+.last:hover {
+  background-color: #B3A125;
+}
+

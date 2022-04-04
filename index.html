@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeApi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+<div class="info info-one" id="info">
+    <p class="">Click the <span>Pokémon</span> for a random one!</p>
+</div>
+
+<div class="info info-two">
+    <p>Click the description for a new one!</p> 
+</div>
+<img class="pokeapi-logo" id="pokeApiLogo" src="./pokeapi_logo.png" alt="">
+
+
+<div class="poke-chat" id="pokeChat">Hey, <strong>you</strong>! CLICK ME!</div>
+<a class="next" id="pokeNext">&#8249;</a>
+<a class="last" id="pokeLast">&#8250;</a>
+    <div class="pokeDex" id="pokemonDex">
+        <div class="wrapper-pokemon">
+                    <img class="one"   id="pokeImg">
+                    <p class="two" id="pokeID"></p>
+                    <p class="three" id="pokeName"></p>
+                    <p class="four" id="pokeType"></p>
+                    <p class="five" id="pokeH"></p>
+                    <p class="six" id="pokeW"></p>
+                    <img class="seven" src="border1.png"  alt="">
+        </div>
+        <div class="pokeDescription">
+            <p id="pokeDesc" class="pokeDesc">&#9660;</p>
+        </div>
+    </div>
+
+    
+    <audio src="./pokemon-a-button.mp3" id="pokeClick"></audio>
+    <audio src="./pokeAbsorb.mp3" id="pokeAbsorb"></audio>
+    <audio src="./tink.wav" id="pokeTink"></audio>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
