@@ -1,4 +1,4 @@
-const url = "http://pokeapi.co/api/v2/"
+const url = "https://pokeapi.co/api/v2/"
 const pokeNext = document.getElementById("pokeNext")
 const pokeLast = document.getElementById("pokeLast")
 const pokemonDex = document.getElementById("pokemonDex")
