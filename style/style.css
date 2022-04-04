@@ -54,7 +54,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image:  url(./images/texture.jpeg) ;
+    background-image: url(../images/texture.jpeg);
     border: 1px solid #000;
     margin: 0 auto;
 }
